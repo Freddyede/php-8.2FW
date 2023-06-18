@@ -8,14 +8,7 @@
 - #### "src/" : Contiendra tous les dossiers sources qui seront à destination du/des futur.s développeur.s
 - #### "templates/" : Contiendra toutes les vues du/des futur.s développeur.s
 - #### "autoload.php" : Autoload permettant la génération des namespace
-## <u>À faire validation</u> :
-| Nom | Catégorie  |
-|:---:|:----------:|
-|  0  |  Urgente   |
-|  1  | Importante |
-|  2  |   Normal   |
-|  3  |   Faible   |
-|  4  |   Avoir    |
+
 ## <u>Tâches</u> :
 |       Author       |             Nom             |                      Description                      | TaskList groups  |               Developers                | Version |
 |:------------------:|:---------------------------:|:-----------------------------------------------------:|:----------------:|:---------------------------------------:|:-------:|
