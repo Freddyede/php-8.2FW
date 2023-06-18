@@ -16,7 +16,7 @@
 |  2  |   Normal   |
 |  3  |   Faible   |
 |  4  |   Avoir    |
-## <u>Idées</u> :
+## <u>Tâches</u> :
 |       Author       |             Nom             |                      Description                      | TaskList groups  |               Developers                | Version |
 |:------------------:|:---------------------------:|:-----------------------------------------------------:|:----------------:|:---------------------------------------:|:-------:|
 | Patouillard Franck |    AuthenticatorModules     |      Authentifier les administrateurs et la cli       |   IN PROGRESS    | Franck Patouillard, Alexandre Rodriguez |  0.0.1  |
