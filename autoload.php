@@ -1,7 +1,5 @@
 <?php
 
-use JetBrains\PhpStorm\NoReturn;
-
 // section sources
 function getSources($className): array|string {
     return str_replace("App\\",'src\\',$className);
@@ -9,7 +7,7 @@ function getSources($className): array|string {
 
 
 // section autoload
-#[NoReturn] function autoload ($className): void {
+function autoload ($className): void {
     if(str_starts_with($className, "App\\")){
         $className = getSources($className);
     }
