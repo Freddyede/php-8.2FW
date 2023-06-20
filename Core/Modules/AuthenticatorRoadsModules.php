@@ -13,11 +13,15 @@ class AuthenticatorRoadsModules
      * @var array $roads
      * @desc This property contains all roads for all users
      * [
-     *      "authenticated" => [
-     *          "GET" => [], "POST" => [], "PUT" => [], "PATCH" => []
+     *      "system" => [
      *      ],
-     *      "notAuthenticated" => [
-     *          "GET" => [], "POST" => [], "PUT" => [], "PATCH" => []
+     *      "routes" => [
+     *          "authenticated" => [
+     *              "GET" => [], "POST" => [], "PUT" => [], "PATCH" => []
+     *          ],
+     *          "notAuthenticated" => [
+     *              "GET" => [], "POST" => [], "PUT" => [], "PATCH" => []
+     *          ]
      *      ]
      * ]
      */
