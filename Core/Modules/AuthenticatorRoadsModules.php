@@ -15,6 +15,12 @@ class AuthenticatorRoadsModules
      * [
      *      "system" => [
      *      ],
+     *      users table has array 'is_admin' which values can be set to true or false
+     *      connectToDB = new PDO...
+     *
+     *      if is_admin === true
+     *
+     *      else is_admin === false
      *      "routes" => [
      *          "authenticated" => [
      *              "GET" => [], "POST" => [], "PUT" => [], "PATCH" => []
