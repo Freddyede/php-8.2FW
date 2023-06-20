@@ -1,12 +1,13 @@
 <?php
 
-namespace Core\Repository\Requests;
+namespace Core\ORM\Repository\Requests;
 
 
-use Core\Traits\Repository\Requests\FindTrait;
+use Core\Traits\ORM\Repository\Requests\FindTrait;
 use PDO;
 
-class RepositoryRequest {
+class RepositoryRequest
+{
 
     /**
      * @var PDO|null

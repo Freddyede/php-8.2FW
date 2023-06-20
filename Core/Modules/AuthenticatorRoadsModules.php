@@ -16,7 +16,7 @@ class AuthenticatorRoadsModules
      *      "system" => [
      *      ],
      *      users table has array 'is_admin' which values can be set to true or false
-     *      connectToDB = new PDO...
+     *      connectToDB = new PDO();
      *
      *      if is_admin === true
      *
