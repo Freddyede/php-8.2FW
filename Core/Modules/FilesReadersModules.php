@@ -11,6 +11,14 @@ use Core\Interfaces\Modules\FilesReadersModulesInterface;
  */
 class FilesReadersModules implements FilesReadersModulesInterface
 {
+    private static string $rootDirectory;
+
+    public static function __staticConstruct(): void
+    {
+        require __DIR__ . '/../../index.php';
+        self::$rootDirectory = INIT_DIRECTORY;
+    }
+
     /**
      * @param string|null $parentDirectories directory from root directory
      * @param string|null $childsDirectories directory from parent directory if exists
@@ -20,7 +28,7 @@ class FilesReadersModules implements FilesReadersModulesInterface
      */
     public static function directoryReaders(?string $parentDirectories = NULL, ?string $childsDirectories = NULL): array|null
     {
-        require __DIR__ . '/../../index.php';
-        return (is_dir(INIT_DIRECTORY . '/' . $parentDirectories) && is_dir(INIT_DIRECTORY . '/' . $parentDirectories . '/' . $childsDirectories)) ? scandir(INIT_DIRECTORY . '/' . $parentDirectories . '/' . $childsDirectories) : NULL;
+        self::__staticConstruct();
+        return (is_dir(self::$rootDirectory . '/' . $parentDirectories) && is_dir(self::$rootDirectory . '/' . $parentDirectories . '/' . $childsDirectories)) ? scandir(self::$rootDirectory . '/' . $parentDirectories . '/' . $childsDirectories) : NULL;
     }
 }
