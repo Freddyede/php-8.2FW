@@ -2,7 +2,7 @@
 
 namespace Core\ORM;
 
-use Core\Modules\FilesReadersModules;
+use Core\Modules\DirectoryModules;
 
 class ObjectRelationMapping
 {
@@ -17,7 +17,7 @@ class ObjectRelationMapping
      */
     public static function entityReader(): array
     {
-        $directory = FilesReadersModules::directoryReaders('src', 'Entity');
+        $directory = DirectoryModules::directoryReaders('src', 'Entity');
         for ($i = 2; $i < count($directory); $i++) {
             var_dump($directory[$i]);
             str_replace("/", "\\", $directory[$i]);

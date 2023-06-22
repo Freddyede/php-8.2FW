@@ -2,7 +2,7 @@
 
 namespace Core\Interfaces\Modules;
 
-interface FilesReadersModulesInterface
+interface DirectoryModulesInterface
 {
     /**
      * @param string|null $parentDirectories directory from root directory

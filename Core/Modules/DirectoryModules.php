@@ -2,14 +2,15 @@
 
 namespace Core\Modules;
 
-use Core\Interfaces\Modules\FilesReadersModulesInterface;
+use Core\Interfaces\Modules\DirectoryModulesInterface;
+
 
 /**
  * @author Patouillard Franck<patouillardfranck3@gmail.com>
- * @class FilesReadersModules
+ * @class DirectoryReadersModules
  * @desc This class can read all files and all directory inside project
  */
-class FilesReadersModules implements FilesReadersModulesInterface
+class DirectoryModules implements DirectoryModulesInterface
 {
     private static string $rootDirectory;
 
