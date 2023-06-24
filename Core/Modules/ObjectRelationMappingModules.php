@@ -4,7 +4,7 @@ namespace Core\Modules;
 
 use PDO;
 
-class ObjectRelationMapping
+class ObjectRelationMappingModules
 {
     private static array $multipleDatabases = [];
 
