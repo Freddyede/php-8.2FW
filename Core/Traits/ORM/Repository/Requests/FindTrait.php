@@ -1,14 +1,16 @@
 <?php
 
-namespace Core\Traits\Repository\Requests;
+namespace Core\Traits\ORM\Repository\Requests;
 
-trait   FindTrait {
+trait   FindTrait
+{
 
     /**
      * @return bool|array
      * @version 0.0.1
      */
-    public static function findAll(): bool|array {
+    public static function findAll(): bool|array
+    {
         $query = 'SELECT * FROM ' . self::$tableName;
         $pdo = self::getInstance();
         return $pdo->query($query)->fetchAll();
