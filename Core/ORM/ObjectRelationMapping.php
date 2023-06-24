@@ -3,7 +3,9 @@
 namespace Core\ORM;
 
 use Core\Modules\DirectoryModules;
+use Core\Modules\ObjectRelationMappingModules;
 use Exception;
+use PDO;
 
 class ObjectRelationMapping
 {
@@ -29,6 +31,16 @@ class ObjectRelationMapping
             $directory = $exception->getMessage();
         }
         return $directory;
-
     }
+
+    public static function simpleConnection(): PDO|array|null
+    {
+        return ObjectRelationMappingModules::getPdo(false);
+    }
+
+    public static function multipleConnection(): PDO|array|null
+    {
+        return ObjectRelationMappingModules::getPdo(true);
+    }
+
 }
