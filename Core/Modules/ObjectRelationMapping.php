@@ -4,7 +4,7 @@ namespace Core\Modules;
 
 use PDO;
 
-class ObjectRelationMappingModules
+class ObjectRelationMapping
 {
     private static array $multipleDatabases = [];
 
@@ -28,18 +28,5 @@ class ObjectRelationMappingModules
             !empty(DATABASES['password']) &&
             !empty(DATABASES['databases'])
         ) ? new PDO('mysql:host=localhost;dbname=' . DATABASES['databases'], DATABASES['username'], DATABASES['password']) : NULL;
-    }
-}
-
-class ObjectRelationMapping
-{
-    public static function simpleConnection(): PDO|array|null
-    {
-        return ObjectRelationMappingModules::getPdo(false);
-    }
-
-    public static function multipleConnection(): PDO|array|null
-    {
-        return ObjectRelationMappingModules::getPdo(true);
     }
 }
