@@ -17,7 +17,6 @@ class ObjectRelationMapping
      * @return array
      * @author Rodriguez Alexandre<alexandre.rodriguez.arz@gmail.com>
      * @author Patouillard Franck<patouillardfranck3@gmail.com>
-     * @todo ORM property
      */
     public static function entityReader(): array
     {
